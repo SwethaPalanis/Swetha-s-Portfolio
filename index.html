@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seat Booking</title>
+ 
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- .container-moviepicker
+    .container-moviepicker label
+    .container-moviepicker select#movie
+    .container-moviepicker select#movie option -->
+
+
+    <div class="container-moviepicker">
+        <label for="">Pick a Movie</label>
+        <select id="movie">
+            <option value="100">Adipurush (Rs 100)</option>
+            <option value="200">RRR (Rs 200)</option>
+            <option value="300">KGF 2 (Rs 300)</option> 
+        </select>
+    </div>
+
+    <!-- .showcase{}
+    .showcase li{}
+    .showcase li seat{}
+    .showcase li seat small{}
+    .showcase li seat.selected{}
+    .showcase li seat.selected small{}
+    .showcase li seat.occupied{}
+    .showcase li seat.occupied small{} -->
+
+    <ul class="showcase">
+        <li>
+            <div class="seat"></div> <small>Open</small>
+        </li>
+        <li>
+            <div class="seat selected"></div> <small>Selected</small>
+        </li>
+        <li>
+            <div class="seat occupied"></div> <small>occupied</small>
+        </li>
+    </ul>
+
+
+    <!-- .container-screen{}
+    .container-screen .screen{}
+    .container-screen .row{}
+    .container-screen .row .seat{}
+    .container-screen .row .seat.occupied{}
+    .container-screen .row .seat.selected{} -->
+
+    <div class="container-screen">
+        <div class="screen"></div>
+       <div class="row">
+         <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+       </div>
+         <div class="row">
+         <div class="seat occupied"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+       </div>
+         <div class="row">
+         <div class="seat"></div>
+        <div class="seat occupied"></div>
+        <div class="seat occupied"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+       </div>
+         <div class="row">
+         <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat occupied"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+       </div>
+       <div class="row">
+        <div class="seat"></div>
+       <div class="seat"></div>
+       <div class="seat"></div>
+       <div class="seat "></div>
+       <div class="seat"></div>
+       <div class="seat"></div>
+       <div class="seat occupied"></div>
+       <div class="seat"></div>
+      </div>
+
+       <div class="row">
+        <div class="seat"></div>
+       <div class="seat"></div>
+       <div class="seat"></div>
+       <div class="seat occupied"></div>
+       <div class="seat"></div>
+       <div class="seat"></div>
+       <div class="seat"></div>
+       <div class="seat"></div>
+      </div>
+    </div>
+
+    <!-- .text{}
+    .text #count{}
+    .text #total{} -->
+    
+    <p class="text">You have selected <span id="count">0</span> Seats for Price <span id="total">500</span></p>
+ 
+    <script src="script.js"></script>
+</body>
+</html>
